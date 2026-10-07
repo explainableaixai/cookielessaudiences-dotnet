@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageId>AlphaQuantum.CookielessAudiences</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Alpha Quantum</Authors>
+    <Description>.NET client for the Cookieless Audiences API: page-level audience segmentation and IAB content categorization with no cookies and no PII.</Description>
+    <PackageProjectUrl>https://www.cookielessaudiences.com</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/explainableaixai/cookielessaudiences-dotnet</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>cookieless;audience-segmentation;iab;adtech;contextual-targeting;purchase-intent</PackageTags>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="tests/**;examples/**" />
+    <None Remove="tests/**;examples/**" />
+    <None Include="README.md" Pack="true" PackagePath="/" />
+    <None Include="LICENSE" Pack="true" PackagePath="/" />
+  </ItemGroup>
+</Project>
